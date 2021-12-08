@@ -1,0 +1,56 @@
+// =============================================================================
+// _responsive.scss : Viewports
+// MIT License
+// =============================================================================
+
+// =============================================================================
+// _responsive.scss settings
+// =============================================================================
+
+$tablet: 768px;
+$desktop: 992px;
+$large: 1200px;
+
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large) {
+    @content;
+  }
+}
+
+
+@mixin paragraf { 
+  color: rgb(75, 33, 3);
+  background-color: rgb(226, 226, 204);
+  text-align: center;
+  font-size: large;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+}
+
+@mixin h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  background-color: rgb(75, 33, 3);
+  border-radius: 10px;
+  color: burlywood;
+  padding: 3px;
+  box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+  
+}

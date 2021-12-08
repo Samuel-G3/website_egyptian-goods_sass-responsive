@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 20px 10px;
+  background-color: rgb(75, 33, 3);
+  border-bottom: solid burlywood;
+  box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+  line-height: 25px;
+  color: burlywood;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 10px;
+  @include desktop {
+    flex-direction: row;
+  }
+  @include tablet {
+    flex-direction: row;
+  }
+}
+.footer:hover {
+  color: rgb(241, 157, 53);
+  cursor: all-scroll;
+}
+.eye {
+  width: 10%;
+}

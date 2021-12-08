@@ -1,0 +1,30 @@
+.gods {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.gods-title {
+  @include h1;
+}
+.gods-paragraf {
+  @include paragraf;
+}
+.gods img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  filter: brightness(10%);
+  @include desktop {
+    width: 50%;
+    margin: 40px 20px;
+  }
+  @include tablet {
+    width: 50%;
+    margin: 40px 20px;
+  }
+}
+.gods img:hover {
+    filter: brightness(100%);
+  }
